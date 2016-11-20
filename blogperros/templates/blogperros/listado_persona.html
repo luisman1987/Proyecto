@@ -1,4 +1,3 @@
-
 {% extends 'blogperros/base.html' %}
 {% block content %}
 
@@ -6,12 +5,12 @@
   <!-- Item Project and Filter Name -->
               <li class="item-thumbs span3 design">
                   <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{post.nombre}}" href="{% url 'blogperros.views.detalle_perro' pk=post.pk %}">
+                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{post.nombre}}" href="{% url 'blogperros.views.detalle_persona' pk=post.pk %}">
                       <span class="overlay-img"></span>
                         <span class="overlay-img-thumb font-icon-plus"></span>
                     </a>
                     <!-- Thumb Image and Description -->
-                    <img src="{{post.imagen.url}}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                    <img src="{{post.foto.url}}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                 </li>
               <!-- End Item Project -->
   {% endfor %}

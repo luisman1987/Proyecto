@@ -77,8 +77,8 @@
         <nav id="menu">
         	<ul id="menu-nav">
             	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#work">Our Work</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="{% url 'blogperros.views.listado_personas' %}">Personas</a></li>
+                <li><a href="{% url 'blogperros.views.persona_nueva' %}">Nueva Persona</a></li>
                 <li><a href="#contact">Contact</a></li>
 				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
             </ul>
@@ -108,9 +108,9 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
+                    	<li class="type-work">Cachorros</li>
+                        <li><a href="{% url 'blogperros.views.listado_perros' %}" data-option-value="*" class="selected">Listar Perros</a></li>
+                        <li><a href="{% url 'blogperros.views.perro_nuevo' %}" data-option-value=".design">Nuevo Perro</a></li>
                         <li><a href="#filter" data-option-value=".photography">Photography</a></li>
                         <li><a href="#filter" data-option-value=".video">Video</a></li>
                     </ul>
